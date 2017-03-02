@@ -11,6 +11,11 @@
 require '/inc/setup.php';
 
 /**
+ * Setup Custom Dashboard
+ */
+require '/inc/dashboard.php';
+
+/**
  * Advanced Custom Fields
  */
 require '/inc/acf.php';

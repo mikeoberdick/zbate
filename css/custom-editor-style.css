@@ -9231,3 +9231,69 @@ h1.navbar-brand a:hover {
 
 .gallery-caption {
   display: block; }
+
+/*
+Theme Name:  Designs 4 The Web
+Theme URI:   http://designs4theweb.com
+Version:     1.0
+Description: A custom built theme for Designs 4 The Web.
+Author:      Designs 4 The Web
+Author URI:  http://designs4theweb.com
+Template:    Understrap
+*/
+/*------------------------------------------------*/
+/*-----------------[BASIC STYLES]-----------------*/
+/*------------------------------------------------*/
+body {
+  color: #b2b2b2;
+  font-family: 'open-sans', sans-serif; }
+
+/*------------------------------------------------*/
+/*---------------[MAIN LAYOUT INFO]---------------*/
+/*------------------------------------------------*/
+/*------------------------------------------------*/
+/*--------------------[HEADER]--------------------*/
+/*------------------------------------------------*/
+#navbarNavDropdown {
+  justify-content: flex-end; }
+
+/*------------------------------------------------*/
+/*-------------------[MENU]-----------------------*/
+/*------------------------------------------------*/
+/*------------------------------------------------*/
+/*----------------------[PAGES]-------------------*/
+/*------------------------------------------------*/
+/*------------------------------------------------*/
+/*--------------------[SIDEBAR]-------------------*/
+/*------------------------------------------------*/
+/*------------------------------------------------*/
+/*---------------------[FOOTER]-------------------*/
+/*------------------------------------------------*/
+#wrapper-footer {
+  color: #000000;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 12px; }
+  #wrapper-footer #footerWidgets {
+    padding: 50px 0; }
+  #wrapper-footer h5 {
+    padding-bottom: 5px;
+    border-bottom: solid 2px;
+    text-transform: uppercase;
+    color: #fece00; }
+  #wrapper-footer ul {
+    padding-left: 0;
+    list-style: none; }
+    #wrapper-footer ul li {
+      margin-bottom: 5px; }
+      #wrapper-footer ul li a {
+        color: #fece00;
+        text-transform: uppercase;
+        font-size: 12px; }
+        #wrapper-footer ul li a:hover {
+          text-decoration: none; }
+
+/*------------------------------------------------*/
+/*---------------[RESPONSIVE LAYOUTS]-------------*/
+/*------------------------------------------------*/
