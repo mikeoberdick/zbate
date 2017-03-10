@@ -11,6 +11,8 @@ $the_theme = wp_get_theme();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
+<?php if ( is_active_sidebar( 'footer_1') || is_active_sidebar( 'footer_2') || is_active_sidebar( 'footer_3') || is_active_sidebar( 'footer_4') ) { ?>
+
 <div class="wrapper" id="wrapper-footer">
 
 	<div class="<?php echo esc_html( $container ); ?>">
@@ -37,9 +39,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	</div><!-- .container -->
 
-	<div class = "container-fluid">
+	<?php } ?>
 
-		<div id = "bottomFooter" class="row">
+	<div id = "bottomFooter" class = "container-fluid">
+
+		<div class="row">
 
 			<div class="col-md-12">
 

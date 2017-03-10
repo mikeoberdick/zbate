@@ -1,13 +1,11 @@
-body {
-  background-color: #565656;
+#opacityLayer {
+    background-color: rgba(0, 0, 0, 0.50);
+    padding: 100px;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
-#homePriceDefaults {
-  display: flex;
-  justify-content: space-between;
-}
-
-#homePrice .homePrice, .rebateAmount {
+.homePrice, .rebateAmount {
     padding: 0 0 0 5px;
     font-size: 30px;
     font-weight: bold;
@@ -15,7 +13,7 @@ body {
 
 .range-holder {
   margin: 0;
-  padding: 0 0 220px;
+  padding: 0 0 250px;
   width: 100%;
 }
 
@@ -31,9 +29,9 @@ body {
 }
 
 .stripe {
-  background: #449d44;
-    background: -webkit-linear-gradient(left, #C3AAAA, #449d44);
-    background: linear-gradient(to right, #C3AAAA, #449d44);
+  background: #42517f;
+    background: -webkit-linear-gradient(left, #C3AAAA, #42517f);
+    background: linear-gradient(to right, #C3AAAA, #42517f4);
     position: relative;
     top: 0;
     left: 0;
@@ -50,7 +48,6 @@ body {
     margin-left: -181px;
     margin-top: 55px;
     width: 400px;
-    height: 165px;
     background: #FFF;
     padding: 0px;
     -webkit-border-radius: 8px;

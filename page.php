@@ -32,8 +32,20 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 					<?php
 
-					if( is_page( 'homepage' ) ) {
-      					get_template_part( 'template-parts/content', 'home' );
+					if( is_page( 'contact-us' ) ) {
+      					get_template_part( 'template-parts/content', 'contact' );
+    				}
+
+    				else if( is_page( 'how-it-works' ) ) {
+      					get_template_part( 'template-parts/content', 'how-it-works' );
+    				}
+
+    				else if( is_page( 'choose-an-account' ) ) {
+      					get_template_part( 'template-parts/content', 'interstitial-registration' );
+    				}
+
+    				else if( is_page( 'faq' ) ) {
+      					get_template_part( 'template-parts/content', 'faq' );
     				}
 
 					else {
@@ -62,10 +74,12 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 		<?php endif; ?>
 
-	</div><!-- .row -->
+</div><!-- .row -->
 
 </div><!-- Container end -->
 
 </div><!-- Wrapper end -->
+
+<div id="js-heightControl" style="height: 0;">&nbsp;</div>
 
 <?php get_footer(); ?>

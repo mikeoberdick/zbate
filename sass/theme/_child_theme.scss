@@ -13,12 +13,15 @@ Template:    Understrap
 /*------------------------------------------------*/
 
 h1, h2, h3, h4, h5 {
-	
+	color: $brand-primary;
+	font-family: $header-font;
+	font-weight: bold;
 }
 
 body {
-	color: #b2b2b2;
-	font-family: 'open-sans', sans-serif;
+	color: #bbbbc7;
+	font-family: $body-font;
+	background-color: #f3f3f5;
 }
 
 /*------------------------------------------------*/
@@ -31,9 +34,20 @@ body {
 /*--------------------[HEADER]--------------------*/
 /*------------------------------------------------*/
 
-#navbarNavDropdown {
-	justify-content: flex-end;
+#wrapper-navbar {
+	#navbarNavDropdown {
+		justify-content: flex-end;
+	}
+
+	#main-menu  {
+		a {
+			color: $brand-primary;
+		}
+	}
 }
+
+
+
 
 
 /*------------------------------------------------*/
@@ -44,6 +58,136 @@ body {
 /*------------------------------------------------*/
 /*----------------------[PAGES]-------------------*/
 /*------------------------------------------------*/
+
+/* HOMEPAGE --------------------------------------*/
+
+.heroSection {
+	background-image: url(/wp-content/themes/wp-understrap/img/rebate_wrapper_bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    #hpCTA {
+	    	h1 {
+	    		color: #fff;
+	    		font-size: 5vh;
+	    	}
+    	}
+
+	.hpButton {
+		@include shadow;
+	}
+}
+
+/* HOW IT WORKS ----------------------------------*/
+
+#howItWorks {
+	#CTA {
+		background-color: #42517f;
+	    border: solid 3px #42517f;
+	    font-size: 3vh;
+	    padding: 25px;
+	    border-radius: 8px;
+	    color: #fff;
+	    font-family: 'Raleway', sans-serif;	
+	}
+	
+}
+
+/* INTERSTITIAL REGISTRATION ---------------------*/
+
+#interstitialRegistration {
+	#customer {
+		border-right: solid 1px;
+	}
+}
+
+/* FAQ -------------------------------------------*/
+
+#faq {
+	
+	.questionWrapper {
+		background-color: #fff;
+	    padding: 20px;
+	    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+	    margin-bottom: 25px;  
+	}
+
+	dt {
+		font-weight: 300;
+		cursor: pointer;
+		font-size: 1.5em;
+		font-weight: 300;
+		font-family: 'Raleway', sans-serif;
+		color: $brand-primary;
+		position: relative;
+
+		span {
+			display: block;
+
+		&:before, &:after {
+			content: '';
+			position: absolute;
+		    right: 24px;
+		    top: 50%;
+		    height: 2px;
+		    width: 13px;
+		    background: $brand-primary;
+		    -webkit-backface-visibility: hidden;
+		    backface-visibility: hidden;
+		    -webkit-transition-property: -webkit-transform;
+		    -moz-transition-property: -moz-transform;
+		    transition-property: transform;
+		    -webkit-transition-duration: 0.2s;
+		    -moz-transition-duration: 0.2s;
+		    transition-duration: 0.2s;
+		}
+
+		&:before {
+			-webkit-transform: rotate(45deg);
+		    -moz-transform: rotate(45deg);
+		    -ms-transform: rotate(45deg);
+		    -o-transform: rotate(45deg);
+		    transform: rotate(45deg);
+		    right: 32px;
+		}
+
+		&:after {
+			-webkit-transform: rotate(-45deg);
+		    -moz-transform: rotate(-45deg);
+		    -ms-transform: rotate(-45deg);
+		    -o-transform: rotate(-45deg);
+		    transform: rotate(-45deg);
+		}
+
+		}
+	}
+
+	.expanded {
+		span {
+			&:before {
+				-webkit-transform: rotate(-45deg);
+			    -moz-transform: rotate(-45deg);
+			    -ms-transform: rotate(-45deg);
+			    -o-transform: rotate(-45deg);
+			    transform: rotate(-45deg);
+			}
+
+			&:after {
+				    -webkit-transform: rotate(45deg);
+				    -moz-transform: rotate(45deg);
+				    -ms-transform: rotate(45deg);
+				    -o-transform: rotate(45deg);
+				    transform: rotate(45deg);
+			}
+		}
+	}
+	
+	dd {
+		display: none;
+		font-size: 1em;
+		margin-top: 25px;
+	}
+}
 
 
 /*------------------------------------------------*/
@@ -89,6 +233,21 @@ body {
 					text-decoration: none;
 				}
 			}
+		}
+	}
+}
+
+#bottomFooter {
+	background-color: $brand-primary;
+	color: #fff;
+	padding-top: 25px;
+	padding-bottom: 25px;
+
+	a {
+		color: #fff;
+
+		&:hover {
+			text-decoration: none;
 		}
 	}
 }

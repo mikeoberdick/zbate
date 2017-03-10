@@ -1,10 +1,3 @@
-//Function to add commas every third digit
-jQuery.fn.digits = function(){ 
-    return this.each(function(){ 
-        jQuery(this).text( jQuery(this).text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") ); 
-    })
-}
-
 Number.prototype.format = function(n, x) {
     var re = '\\d(?=(\\d{' + (x || 3) + '})+' + (n > 0 ? '\\.' : '$') + ')';
     return this.toFixed(Math.max(0, ~~n)).replace(new RegExp(re, 'g'), '$&,');
@@ -40,7 +33,6 @@ var windowMobileWidth = 860,
     init = 0;
 
     new Dragdealer('home_price_slider', {
-
         animationCallback: function(x, y) {
             if (init === 0) {
                 init++;
@@ -49,13 +41,13 @@ var windowMobileWidth = 860,
             var slider_value = x.toFixed(3) *2000;
 
             var stripe_width = x * 100;
-            if (slider_value < 6) {
-                slider_value = 5000;
+            if (slider_value < 100) {
+                slider_value = 100000;
             } else {
                 slider_value *= 1000
             }
 
-            jQuery(".rebateAmount").html("$" + Math.round((slider_value*0.03) *.66).format());
+            jQuery(".rebateAmount").html("$" + Math.round(((slider_value*0.03) *.3) *.66666).format());
             jQuery(".homePrice").html("$" + slider_value.format());
 
             jQuery(".stripe").css("width", ""+stripe_width+"%");
