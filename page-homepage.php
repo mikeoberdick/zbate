@@ -8,7 +8,7 @@
 get_header(); ?>
 
 <div id="page-wrapper">
-	<div class="container-fluid heroSection" id="content" tabindex="-1">
+	<div class="container-fluid heroSection" id="content" tabindex="-1" style = "background-image: url('<?php the_post_thumbnail_url(); ?>')">
 		<div id = "opacityLayer">
 			<div class="row">
 				<div id = "hpCTA" class = "col-sm-12 text-center mb-3">
@@ -28,7 +28,7 @@ get_header(); ?>
 					                        <div class="innerbox-before"></div>
 						                        <div class="innerbox">
 									        	<h3>Home Price</h3>
-									        	<span class="homePrice"></span>
+									        	<span class="homePrice mb-3"></span>
 						                        <h3>Your Zbate Reward:</h3>
 						                        <span class="rebateAmount"></span>
 						                      </div>
@@ -41,11 +41,13 @@ get_header(); ?>
 					        </div> <!-- .range-holder -->
 					<?php endwhile; // end of the loop ?>
 
-					<div class = "col-sm-6 text-center"><a href = "/choose-an-account/" class = "btn btn-primary btn-lg hpButton text-uppercase">Register</a></div>
-					<div class = "col-sm-6 text-center"><a href = "/how-it-works/" class = "btn btn-primary btn-lg hpButton text-uppercase">How It Works</a></div>
+					<div class = "col-sm-6 text-center"><a href = "/zbate/choose-an-account/" class = "btn btn-primary btn-lg hpButton text-uppercase">Register</a></div>
+					<div class = "col-sm-6 text-center"><a href = "/zbate/how-it-works/" class = "btn btn-primary btn-lg hpButton text-uppercase">How It Works</a></div>
 			</div><!-- .row -->
+				<div id="js-heightControl" style="height: 0;">&nbsp;</div>
 		</div><!-- #opacityLayer -->
 	</div><!-- .container-fluid -->
+
 </div><!-- Wrapper end -->
 
 <?php get_footer(); ?>

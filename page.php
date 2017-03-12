@@ -17,14 +17,33 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 ?>
 
+<?php
+
+	if ( has_post_thumbnail() ) { ?>
+	
+	<header class="entry-header" style = "background-image: url('<?php the_post_thumbnail_url(); ?>')">
+		<div class = "titleWrapper">
+		<?php the_title( '<h1 class="entry-title page_header">', '</h1>' ); ?>
+		</div>
+	</header><!-- .entry-header -->
+	
+	<?php }
+
+	else { ?>
+
+    <header class="entry-header" style = "background-image: url( <?php echo get_stylesheet_directory_uri() . '/img/rebate_wrapper_bg.jpg';?>)">
+    	<div class = "titleWrapper">
+		<?php the_title( '<h1 class="entry-title page_header">', '</h1>' ); ?>
+		</div>
+	</header><!-- .entry-header -->
+	
+	<?php } ?>
+
 <div class="wrapper" id="page-wrapper">
 
 	<div class="<?php echo esc_html( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">
-
-			<!-- Do the left sidebar check -->
-			<?php get_template_part( 'global-templates/left-sidebar-check', 'none' ); ?>
 
 			<main class="site-main" id="main">
 
@@ -65,18 +84,9 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 			</main><!-- #main -->
 
-		</div><!-- #primary -->
+		</div><!-- .row -->
 
-		<!-- Do the right sidebar check -->
-		<?php if ( 'right' === $sidebar_pos || 'both' === $sidebar_pos ) : ?>
-
-			<?php get_sidebar( 'right' ); ?>
-
-		<?php endif; ?>
-
-</div><!-- .row -->
-
-</div><!-- Container end -->
+	</div><!-- Container end -->
 
 </div><!-- Wrapper end -->
 

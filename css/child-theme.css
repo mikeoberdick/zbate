@@ -9250,9 +9250,24 @@ h1, h2, h3, h4, h5 {
   font-weight: bold; }
 
 body {
-  color: #bbbbc7;
+  color: #808080;
   font-family: "open-sans", sans-serif;
   background-color: #f3f3f5; }
+
+.entry-header {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.titleWrapper {
+  background-color: rgba(0, 0, 0, 0.4); }
+  .titleWrapper .page_header {
+    color: #fff;
+    font-size: 10vh;
+    padding: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility; }
 
 /*------------------------------------------------*/
 /*---------------[MAIN LAYOUT INFO]---------------*/
@@ -9274,8 +9289,7 @@ body {
 /*------------------------------------------------*/
 /* HOMEPAGE --------------------------------------*/
 .heroSection {
-  background-image: url(/wp-content/themes/wp-understrap/img/rebate_wrapper_bg.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat; }
   .heroSection #hpCTA h1 {
     color: #fff;

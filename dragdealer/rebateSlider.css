@@ -21,6 +21,12 @@
   display: inline;
 }
 
+.range-left, .range-right {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
 .dragdealer {
     position: relative;
     height: 14px;

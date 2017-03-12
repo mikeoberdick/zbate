@@ -8,13 +8,8 @@
 ?>
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<header class="entry-header mb-3">
-
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
+    <div class="entry-content">
+    
 <div id = "howItWorks">
 	<div class = "row">
 		<div id = "CTA" class = "col-sm-12 jumbotron jumbotron-fluid mb-3 text-center rounded">
