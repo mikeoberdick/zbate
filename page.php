@@ -43,8 +43,6 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 	<div class="<?php echo esc_html( $container ); ?>" id="content" tabindex="-1">
 
-		<div class="row">
-
 			<main class="site-main" id="main">
 
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -83,8 +81,6 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 				<?php endwhile; // end of the loop. ?>
 
 			</main><!-- #main -->
-
-		</div><!-- .row -->
 
 	</div><!-- Container end -->
 

@@ -41,28 +41,22 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<?php } ?>
 
-	<div id = "bottomFooter" class = "container-fluid">
+<div id = "bottomFooter" class = "container-fluid">
+	<footer class="site-footer" id="colophon">
+		<div class="site-info">
+			<div class="row justify-content-center">
+				<div class = "col-sm-5">
+					<span class = "footerLink">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></span>
+				</div>
+				
+				<div class = "col-sm-5">
+					<span class = "footerLink pull-right"><a href = "/terms-and-conditions">Terms & Conditions</a> | <a href = "/privacy-policy">Privacy Policy</a></span>
+				</div>
+			</div><!-- row end -->
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
 
-		<div class="row">
-
-			<div class="col-md-12">
-
-				<footer class="site-footer text-center" id="colophon">
-
-					<div class="site-info">
-					
-					<span>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></span><br />
-					<span>Website by <a href = "http://www.designs4theweb.com">Designs 4 The Web</a></span>
-
-					</div><!-- .site-info -->
-
-				</footer><!-- #colophon -->
-
-			</div><!--col end -->
-
-		</div><!-- row end -->
-
-	</div><!-- .container-fluid -->
+</div><!-- .container-fluid -->
 
 </div><!-- wrapper end -->
 

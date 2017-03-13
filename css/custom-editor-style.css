@@ -9263,11 +9263,14 @@ body {
   background-color: rgba(0, 0, 0, 0.4); }
   .titleWrapper .page_header {
     color: #fff;
-    font-size: 10vh;
+    font-size: 8vh;
     padding: 50px;
     text-align: center;
     text-transform: uppercase;
     text-rendering: optimizeLegibility; }
+    @media (max-width: 991px) {
+      .titleWrapper .page_header {
+        font-size: 5vh; } }
 
 /*------------------------------------------------*/
 /*---------------[MAIN LAYOUT INFO]---------------*/
@@ -9308,6 +9311,10 @@ body {
   border-radius: 8px;
   color: #fff;
   font-family: 'Raleway', sans-serif; }
+  @media (max-width: 991px) {
+    #howItWorks #CTA {
+      margin-left: 15px;
+      margin-right: 15px; } }
 
 /* INTERSTITIAL REGISTRATION ---------------------*/
 #interstitialRegistration #customer {
@@ -9328,12 +9335,16 @@ body {
   font-family: 'Raleway', sans-serif;
   color: #42517f;
   position: relative; }
+  @media (max-width: 991px) {
+    #faq dt {
+      font-size: 1em; } }
   #faq dt span {
-    display: block; }
+    display: block;
+    padding-right: 25px; }
     #faq dt span:before, #faq dt span:after {
       content: '';
       position: absolute;
-      right: 24px;
+      right: 0;
       top: 50%;
       height: 2px;
       width: 13px;
@@ -9352,7 +9363,7 @@ body {
       -ms-transform: rotate(45deg);
       -o-transform: rotate(45deg);
       transform: rotate(45deg);
-      right: 32px; }
+      right: 8px; }
     #faq dt span:after {
       -webkit-transform: rotate(-45deg);
       -moz-transform: rotate(-45deg);
@@ -9415,11 +9426,22 @@ body {
   color: #fff;
   padding-top: 25px;
   padding-bottom: 25px; }
+  #bottomFooter .footerLink {
+    font-size: 12px; }
+    @media (max-width: 991px) {
+      #bottomFooter .footerLink {
+        float: none; } }
   #bottomFooter a {
     color: #fff; }
     #bottomFooter a:hover {
       text-decoration: none; }
+  @media (max-width: 991px) {
+    #bottomFooter {
+      text-align: center; } }
 
 /*------------------------------------------------*/
 /*---------------[RESPONSIVE LAYOUTS]-------------*/
 /*------------------------------------------------*/
+@media (max-width: 991px) {
+  .register_button {
+    margin-bottom: 15px; } }

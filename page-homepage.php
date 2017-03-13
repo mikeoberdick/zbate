@@ -41,8 +41,8 @@ get_header(); ?>
 					        </div> <!-- .range-holder -->
 					<?php endwhile; // end of the loop ?>
 
-					<div class = "col-sm-6 text-center"><a href = "/zbate/choose-an-account/" class = "btn btn-primary btn-lg hpButton text-uppercase">Register</a></div>
-					<div class = "col-sm-6 text-center"><a href = "/zbate/how-it-works/" class = "btn btn-primary btn-lg hpButton text-uppercase">How It Works</a></div>
+					<div class = "col-sm-6 text-center register_button"><a href = "/zbate/choose-an-account/" class = "btn btn-primary btn-lg hpButton text-uppercase">Register</a></div>
+					<div class = "col-sm-6 text-center hiw_button"><a href = "/zbate/how-it-works/" class = "btn btn-primary btn-lg hpButton text-uppercase">How It Works</a></div>
 			</div><!-- .row -->
 				<div id="js-heightControl" style="height: 0;">&nbsp;</div>
 		</div><!-- #opacityLayer -->

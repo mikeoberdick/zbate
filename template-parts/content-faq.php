@@ -1,6 +1,6 @@
 <?php
 /**
- * Partial template for the "How It Works" page
+ * Partial template for the "FAQ" page
  *
  * @package understrap
  */
@@ -16,7 +16,7 @@
 	
 <dl>
 	<div class = "questionWrapper">
-	  	<dt><span><span>What’s the Catch?</span></span></dt>
+	  	<dt><span>What’s the Catch?</span></dt>
 	  	<dd>There is no catch.  Our ZBATE REBATE program simply utilizes an existing real estate industry referral standard to put money into your pocket.</dd>
 	</div>
  

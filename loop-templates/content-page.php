@@ -8,7 +8,8 @@
 ?>
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<div class="entry-content">
+<div class = "row">
+	<div class="entry-content col-sm-12">
 
 		<?php the_content(); ?>
 
@@ -26,6 +27,7 @@
 		<?php edit_post_link( __( 'Edit', 'understrap' ), '<span class="edit-link">', '</span>' ); ?>
 
 	</footer><!-- .entry-footer -->
+</div><!-- .row -->
 
 </article><!-- #post-## -->
 
