@@ -67,6 +67,14 @@ body {
 			color: $brand-primary;
 		}
 	}
+
+	img {
+		@include media-breakpoint-down(sm) { 
+			width: 150px;
+		}
+	}
+
+	
 }
 
 
@@ -77,6 +85,13 @@ body {
 /*-------------------[MENU]-----------------------*/
 /*------------------------------------------------*/
 
+.navbar-toggler {
+	background: $brand-primary;
+}
+
+.dropdown-menu .menu-item a.nav-link:hover {
+	background-color: initial;
+}
 
 /*------------------------------------------------*/
 /*----------------------[PAGES]-------------------*/
@@ -87,13 +102,6 @@ body {
 .heroSection {
     background-size: cover;
     background-repeat: no-repeat;
-
-    #hpCTA {
-	    	h1 {
-	    		color: #fff;
-	    		font-size: 5vh;
-	    	}
-    	}
 
 	.hpButton {
 		@include shadow;

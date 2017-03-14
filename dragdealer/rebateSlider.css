@@ -5,16 +5,49 @@
     margin-right: -15px;
 }
 
+@media (max-width: 590px) {
+    #opacityLayer {
+      padding: 25px;
+  }
+}
+
+#hpCTA h1 {
+  color: #fff;
+  font-size: 5vh;
+}
+
+@media (max-width: 590px) {
+    #hpCTA h1 {
+      font-size: 3vh !important;
+  }
+
+  span.range {
+    font-size: 12px;
+  }
+}
+
 .homePrice, .rebateAmount {
     padding: 0 0 0 5px;
     font-size: 30px;
     font-weight: bold;
 }
 
+@media (max-width: 590px) {
+    .homePrice, .rebateAmount {
+      font-size: 18px;
+  }
+}
+
 .range-holder {
   margin: 0;
   padding: 0 0 250px;
   width: 100%;
+}
+
+@media (max-width: 590px) {
+  .range-holder {
+    padding-bottom: 200px;
+  }
 }
 
 .range-holder .range {
@@ -63,8 +96,20 @@
     box-shadow: 0 4px 6px 0 rgba(29,21,93,0.1);
 }
 
+@media (max-width: 590px) {
+    .infobox {
+      width: 240px;
+  }
+}
+
 .innerbox {
   padding-top: 20px;
+}
+
+@media (max-width: 590px) {
+    .innerbox h3 {
+      font-size: 1em;
+  }
 }
 
 .innerbox-before {

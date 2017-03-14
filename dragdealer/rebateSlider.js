@@ -27,8 +27,8 @@ jQuery.fn.isOnScreen = function(){
 jQuery(document).ready(function(){
 
 var windowMobileWidth = 860,
-    halfInfoboxWidth = 175,
     infoboxWidth = jQuery('.infobox').width(),
+    halfInfoboxWidth = infoboxWidth / 2,
     rangeHolderWidth = jQuery('.range-holder').width(),
     init = 0;
 
