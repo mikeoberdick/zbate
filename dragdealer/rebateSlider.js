@@ -33,12 +33,13 @@ var windowMobileWidth = 860,
     init = 0;
 
     new Dragdealer('home_price_slider', {
+        steps:1000,
         animationCallback: function(x, y) {
             if (init === 0) {
                 init++;
                 this.setValue(0.5, 0);
             }
-            var slider_value = x.toFixed(3) *2000;
+            var slider_value = x.toFixed(3) *1000;
 
             var stripe_width = x * 100;
             if (slider_value < 100) {

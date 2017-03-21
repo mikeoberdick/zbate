@@ -57,9 +57,37 @@ body {
 /*--------------------[HEADER]--------------------*/
 /*------------------------------------------------*/
 
+.navbar {
+	background-color: #bbbbbb;
+	border-top: solid 10px $brand-primary;
+	a {
+		font-weight: bold;
+	}
+}
+
 #wrapper-navbar {
 	#navbarNavDropdown {
 		justify-content: flex-end;
+
+		.btn-outline-primary {
+			border-width: 2px;
+			background-color: inherit;
+			transition: all .5s;
+			&:hover {
+					background-color: $brand-primary;
+				}
+			&:active {
+				background-color: inherit;
+			}
+			a {
+				transition: all .5s;
+				font-weight: normal;
+				&:hover {
+					color: #ffffff;
+				}
+			}
+			
+		}
 	}
 
 	#main-menu  {
@@ -91,6 +119,10 @@ body {
 
 .dropdown-menu .menu-item a.nav-link:hover {
 	background-color: initial;
+}
+
+.navbar-nav {
+	align-items: center;
 }
 
 /*------------------------------------------------*/
@@ -233,6 +265,37 @@ body {
 /*------------------------------------------------*/
 /*--------------------[SIDEBAR]-------------------*/
 /*------------------------------------------------*/
+
+/*------------------------------------------------*/
+/*---------------------[FORMS]--------------------*/
+/*------------------------------------------------*/
+
+.nf-form-cont {
+	
+	.nf-form-fields-required {
+	display: none;
+	}
+
+	.nf-form-content {
+	margin: 0;
+	padding: 0;
+	}
+
+	.field-wrap > div input, .field-wrap textarea, .field-wrap select, .field-wrap .pikaday__container, .field-wrap .pikaday__display, .field-wrap .listselect-wrap > div {
+		max-width: 500px;
+	}
+
+	.liststate-container {
+		max-width: 200px;
+	}
+
+	.t-and-c {
+		label {
+			font-weight: normal;
+		}
+	}
+}
+
 
 
 /*------------------------------------------------*/

@@ -46,3 +46,21 @@ require get_stylesheet_directory() . '/inc/scripts.php';
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
 require get_stylesheet_directory() . '/inc/widgets.php';
+
+/**
+ * Add form functionality
+ *
+ */
+require get_stylesheet_directory() . '/inc/forms.php';
+
+/**
+ * Add form functionality
+ *
+ */
+require get_stylesheet_directory() . '/inc/users.php';
+
+/**
+ * Add Custom Menus
+ *
+ */
+require get_stylesheet_directory() . '/inc/menus.php';

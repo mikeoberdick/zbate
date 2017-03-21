@@ -62,7 +62,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 					} ?><!-- end custom logo -->
 
 				<!-- The WordPress Menu goes here -->
-				<?php wp_nav_menu(
+
+				<?php $parentID = wp_get_post_parent_id( $post_ID ); ?> 
+
+				<?php if (is_page('homepage')) {
+
+					wp_nav_menu(
 					array(
 						'theme_location'  => 'primary',
 						'container_class' => 'collapse navbar-collapse',
@@ -72,7 +77,50 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'menu_id'         => 'main-menu',
 						'walker'          => new WP_Bootstrap_Navwalker(),
 					)
-				); ?>
+				);
+
+				} else if ( is_page('106') || $parentID == '106' ) {
+
+					wp_nav_menu(
+					array(
+						'theme_location'  => 'agent-menu',
+						'container_class' => 'collapse navbar-collapse',
+						'container_id'    => 'navbarNavDropdown',
+						'menu_class'      => 'navbar-nav',
+						'fallback_cb'     => '',
+						'menu_id'         => 'main-menu',
+						'walker'          => new WP_Bootstrap_Navwalker(),
+					)
+				);
+				
+				} else if ( is_page('102') || $parentID == '102' ) {
+
+					wp_nav_menu(
+					array(
+						'theme_location'  => 'buyer-seller-menu',
+						'container_class' => 'collapse navbar-collapse',
+						'container_id'    => 'navbarNavDropdown',
+						'menu_class'      => 'navbar-nav',
+						'fallback_cb'     => '',
+						'menu_id'         => 'main-menu',
+						'walker'          => new WP_Bootstrap_Navwalker(),
+					)
+				);
+
+				} else {
+					wp_nav_menu(
+					array(
+						'theme_location'  => 'primary',
+						'container_class' => 'collapse navbar-collapse',
+						'container_id'    => 'navbarNavDropdown',
+						'menu_class'      => 'navbar-nav',
+						'fallback_cb'     => '',
+						'menu_id'         => 'main-menu',
+						'walker'          => new WP_Bootstrap_Navwalker(),
+					)
+				);
+				} ?>
+				
 			<?php if ( 'container' == $container ) : ?>
 			</div><!-- .container -->
 			<?php endif; ?>

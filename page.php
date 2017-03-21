@@ -17,27 +17,12 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 ?>
 
-<?php
 
-	if ( has_post_thumbnail() ) { ?>
-	
-	<header class="entry-header" style = "background-image: url('<?php the_post_thumbnail_url(); ?>')">
-		<div class = "titleWrapper">
-		<?php the_title( '<h1 class="entry-title page_header">', '</h1>' ); ?>
-		</div>
-	</header><!-- .entry-header -->
-	
-	<?php }
-
-	else { ?>
-
-    <header class="entry-header" style = "background-image: url( <?php echo get_stylesheet_directory_uri() . '/img/rebate_wrapper_bg.jpg';?>)">
+    <header class="entry-header" style = "background-image: url( <?php echo get_stylesheet_directory_uri() . '/img/header_bg.jpg';?>)">
     	<div class = "titleWrapper">
 		<?php the_title( '<h1 class="entry-title page_header">', '</h1>' ); ?>
 		</div>
 	</header><!-- .entry-header -->
-	
-	<?php } ?>
 
 <div class="wrapper" id="page-wrapper">
 
@@ -63,6 +48,14 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
     				else if( is_page( 'faq' ) ) {
       					get_template_part( 'template-parts/content', 'faq' );
+    				}
+
+    				else if( is_page( 'agent' ) ) {
+      					get_template_part( 'template-parts/content', 'agent' );
+    				}
+
+    				else if( is_page( 'buyer-seller' ) ) {
+      					get_template_part( 'template-parts/content', 'buyer-seller' );
     				}
 
 					else {

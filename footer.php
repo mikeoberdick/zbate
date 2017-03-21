@@ -50,7 +50,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 				
 				<div class = "col-sm-5">
-					<span class = "footerLink pull-right"><a href = "/terms-and-conditions">Terms & Conditions</a> | <a href = "/privacy-policy">Privacy Policy</a></span>
+					<span class = "footerLink pull-right"><a href = "terms-and-conditions">Terms & Conditions</a> | <a href = "privacy-policy">Privacy Policy</a></span>
 				</div>
 			</div><!-- row end -->
 		</div><!-- .site-info -->

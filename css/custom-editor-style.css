@@ -9278,8 +9278,27 @@ body {
 /*------------------------------------------------*/
 /*--------------------[HEADER]--------------------*/
 /*------------------------------------------------*/
+.navbar {
+  background-color: #bbbbbb;
+  border-top: solid 10px #42517f; }
+  .navbar a {
+    font-weight: bold; }
+
 #wrapper-navbar #navbarNavDropdown {
   justify-content: flex-end; }
+  #wrapper-navbar #navbarNavDropdown .btn-outline-primary, #wrapper-navbar #navbarNavDropdown .wpcf7 input[type=submit], .wpcf7 #wrapper-navbar #navbarNavDropdown input[type=submit] {
+    border-width: 2px;
+    background-color: inherit;
+    transition: all .5s; }
+    #wrapper-navbar #navbarNavDropdown .btn-outline-primary:hover, #wrapper-navbar #navbarNavDropdown .wpcf7 input[type=submit]:hover, .wpcf7 #wrapper-navbar #navbarNavDropdown input[type=submit]:hover {
+      background-color: #42517f; }
+    #wrapper-navbar #navbarNavDropdown .btn-outline-primary:active, #wrapper-navbar #navbarNavDropdown .wpcf7 input[type=submit]:active, .wpcf7 #wrapper-navbar #navbarNavDropdown input[type=submit]:active {
+      background-color: inherit; }
+    #wrapper-navbar #navbarNavDropdown .btn-outline-primary a, #wrapper-navbar #navbarNavDropdown .wpcf7 input[type=submit] a, .wpcf7 #wrapper-navbar #navbarNavDropdown input[type=submit] a {
+      transition: all .5s;
+      font-weight: normal; }
+      #wrapper-navbar #navbarNavDropdown .btn-outline-primary a:hover, #wrapper-navbar #navbarNavDropdown .wpcf7 input[type=submit] a:hover, .wpcf7 #wrapper-navbar #navbarNavDropdown input[type=submit] a:hover {
+        color: #ffffff; }
 
 #wrapper-navbar #main-menu a {
   color: #42517f; }
@@ -9297,6 +9316,9 @@ body {
 .dropdown-menu .menu-item a.nav-link:hover {
   background-color: initial; }
 
+.navbar-nav {
+  align-items: center; }
+
 /*------------------------------------------------*/
 /*----------------------[PAGES]-------------------*/
 /*------------------------------------------------*/
@@ -9305,9 +9327,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat; }
   .heroSection .hpButton {
-    -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 0 8px 6px -6px black; }
+    -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3); }
 
 /* HOW IT WORKS ----------------------------------*/
 #howItWorks #CTA {
@@ -9400,6 +9422,25 @@ body {
 /*------------------------------------------------*/
 /*--------------------[SIDEBAR]-------------------*/
 /*------------------------------------------------*/
+/*------------------------------------------------*/
+/*---------------------[FORMS]--------------------*/
+/*------------------------------------------------*/
+.nf-form-cont .nf-form-fields-required {
+  display: none; }
+
+.nf-form-cont .nf-form-content {
+  margin: 0;
+  padding: 0; }
+
+.nf-form-cont .field-wrap > div input, .nf-form-cont .field-wrap textarea, .nf-form-cont .field-wrap select, .nf-form-cont .field-wrap .pikaday__container, .nf-form-cont .field-wrap .pikaday__display, .nf-form-cont .field-wrap .listselect-wrap > div {
+  max-width: 500px; }
+
+.nf-form-cont .liststate-container {
+  max-width: 200px; }
+
+.nf-form-cont .t-and-c label {
+  font-weight: normal; }
+
 /*------------------------------------------------*/
 /*---------------------[FOOTER]-------------------*/
 /*------------------------------------------------*/

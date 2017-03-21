@@ -7,8 +7,10 @@
 
 ?>
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-    
+
     <div class="entry-content">
+
+    <h1>Contact Us Today</h1>
 
 		<?php the_content(); ?>
 

@@ -22,7 +22,7 @@
  
  	<div class = "questionWrapper">
   		<dt><span>How does the program work?</span></dt>
-  		<dd>Participating agents will, upon closing of your transaction collect a commission.  Part of the commission is sent to ZBATE as a referral.  The money is processed and then a check is sent to you!</dd>
+  		<dd>Participating agents will, upon closing of your transaction collect a commission.  Part of their commission is sent to ZBATE as a referral.  The money is processed and then a check is sent to you!</dd>
   	</div>
  
  	<div class = "questionWrapper">
@@ -49,7 +49,7 @@
 
 	<div class = "questionWrapper">
   		<dt><span>Can you recommend an agent?</span></dt>
-  		<dd>After the closing of your purchase or sale the agent you used will send a referral fee to ZBATE.  After the funds clear we will process and mail your check.  This averages 14-24 days after your sale closes.</dd>
+  		<dd>When you register, if you select that you don't have an agent, we will respond within 1 business day and recommend an affiliate agent to work with.</dd>
   	</div>
 
 	<div class = "questionWrapper">

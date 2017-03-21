@@ -20,7 +20,7 @@ get_header(); ?>
 
 					        <div class="range-holder">
 					                <span class="range range-left">$100,000</span>
-					                <span class="range range-right pull-right">$2,000,000</span>
+					                <span class="range range-right pull-right">$1,000,000</span>
 					                <div id="home_price_slider" class="dragdealer">
 					                  <div class="stripe">
 					                    <div class="handle">
@@ -29,7 +29,7 @@ get_header(); ?>
 						                        <div class="innerbox">
 									        	<h3>Home Price</h3>
 									        	<span class="homePrice mb-3"></span>
-						                        <h3>Your Zbate Reward:</h3>
+						                        <h3 class = "rebateHeader">Your Zbate Rebate<span>*</span>:</h3>
 						                        <span class="rebateAmount"></span>
 						                      </div>
 						                    <div class="innerbox-after""></div>
@@ -41,8 +41,11 @@ get_header(); ?>
 					        </div> <!-- .range-holder -->
 					<?php endwhile; // end of the loop ?>
 
-					<div class = "col-sm-6 text-center register_button"><a href = "/zbate/choose-an-account/" class = "btn btn-primary btn-lg hpButton text-uppercase">Register</a></div>
-					<div class = "col-sm-6 text-center hiw_button"><a href = "/zbate/how-it-works/" class = "btn btn-primary btn-lg hpButton text-uppercase">How It Works</a></div>
+					<div class = "col-sm-12 text-center register_button">
+						<a href = "choose-an-account/" class = "btn btn-primary btn-lg hpButton text-uppercase mb-5">Register</a><p class = "disclaimer">*Amounts shown are for illustrative purposes only and actual rebate will be determined based on commission collected.</p>
+					</div>
+					
+				
 			</div><!-- .row -->
 				<div id="js-heightControl" style="height: 0;">&nbsp;</div>
 		</div><!-- #opacityLayer -->

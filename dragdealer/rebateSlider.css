@@ -5,6 +5,12 @@
     margin-right: -15px;
 }
 
+@media (min-width: 1200px) {
+    #opacityLayer {
+      padding: 100px 275px;
+  }
+}
+
 @media (max-width: 590px) {
     #opacityLayer {
       padding: 25px;
@@ -30,6 +36,11 @@
     padding: 0 0 0 5px;
     font-size: 30px;
     font-weight: bold;
+}
+
+.rebateHeader span {
+  font-size: 18px;
+  vertical-align: top;
 }
 
 @media (max-width: 590px) {
@@ -100,6 +111,11 @@
     .infobox {
       width: 240px;
   }
+}
+
+.disclaimer {
+  color: #ffffff;
+  font-style: italic;
 }
 
 .innerbox {
