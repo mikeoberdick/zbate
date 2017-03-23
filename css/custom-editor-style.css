@@ -9332,18 +9332,66 @@ body {
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3); }
 
 /* HOW IT WORKS ----------------------------------*/
-#howItWorks #CTA {
-  background-color: #42517f;
+.highlight_text {
+  color: #42517f;
+  font-weight: bold;
+  text-decoration: underline; }
+
+.hiwCTA {
+  background-color: #ffffff;
   border: solid 3px #42517f;
-  font-size: 3vh;
+  color: #42517f;
+  font-size: 20px;
   padding: 25px;
   border-radius: 8px;
-  color: #fff;
   font-family: 'Raleway', sans-serif; }
-  @media (max-width: 991px) {
-    #howItWorks #CTA {
-      margin-left: 15px;
-      margin-right: 15px; } }
+
+ol {
+  counter-reset: li;
+  list-style: none;
+  *list-style: decimal;
+  padding-left: 0 !important; }
+  ol li {
+    position: relative;
+    padding-left: 60px;
+    min-height: 60px;
+    line-height: 48px; }
+    ol li:before {
+      content: counter(li);
+      counter-increment: li;
+      color: #fff;
+      background: #42517f;
+      border-radius: 50%;
+      font-size: 18px;
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+      text-align: center;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3); }
+
+#ourGoal {
+  font-size: 3vh;
+  font-family: 'raleway', sans-serif;
+  color: #42517f;
+  position: relative;
+  padding: 5px 0 0 30px; }
+  #ourGoal:before {
+    content: '';
+    display: block;
+    background-image: url("http://dev.designs4theweb.com/zbate/wp-content/themes/wp-understrap/img/quote.png");
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 72px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: contain; }
 
 /* INTERSTITIAL REGISTRATION ---------------------*/
 #interstitialRegistration #customer {
@@ -9428,6 +9476,12 @@ body {
 .nf-form-cont .nf-form-fields-required {
   display: none; }
 
+.nf-form-cont .html-container {
+  margin-bottom: 0; }
+
+.nf-form-cont .hr-container {
+  margin-bottom: 15px !important; }
+
 .nf-form-cont .nf-form-content {
   margin: 0;
   padding: 0; }
@@ -9440,6 +9494,15 @@ body {
 
 .nf-form-cont .t-and-c label {
   font-weight: normal; }
+
+.nf-form-cont .password {
+  -webkit-text-security: disc; }
+
+.nf-form-cont .nf-field-element:after {
+  top: initial !important;
+  bottom: initial !important;
+  right: initial !important;
+  height: 50px !important; }
 
 /*------------------------------------------------*/
 /*---------------------[FOOTER]-------------------*/

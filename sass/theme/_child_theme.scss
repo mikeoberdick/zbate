@@ -142,22 +142,73 @@ body {
 
 /* HOW IT WORKS ----------------------------------*/
 
-#howItWorks {
-	#CTA {
-		background-color: #42517f;
-	    border: solid 3px #42517f;
-	    font-size: 3vh;
-	    padding: 25px;
-	    border-radius: 8px;
-	    color: #fff;
-	    font-family: 'Raleway', sans-serif;
+.highlight_text {
+	color: $brand-primary;
+	font-weight: bold;
+	text-decoration: underline;
+}
 
-	    @include media-breakpoint-down(md) { 
-			margin-left: 15px;
-			margin-right: 15px;
+.hiwCTA {
+	background-color: #ffffff;
+    border: solid 3px $brand-primary;
+    color: $brand-primary;
+    font-size: 20px;
+    padding: 25px;
+    @include border-radius(8px);
+    font-family: 'Raleway', sans-serif;
+}
+
+ol {
+	counter-reset: li;
+	list-style: none;
+	*list-style: decimal;
+	padding-left: 0 !important;
+
+	li {
+		position: relative;
+		padding-left: 60px;
+		min-height: 60px;
+		line-height: 48px;
+
+		&:before {
+			content: counter(li);
+			counter-increment: li;
+			color: #fff;
+			background: $brand-primary;
+			border-radius: 50%;
+			font-size: 18px;
+			width: 48px;
+			height: 48px;
+			line-height: 48px;
+			text-align: center;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			@include shadow;
 		}
 	}
-	
+}
+
+#ourGoal {
+	font-size: 3vh;
+	font-family: 'raleway', sans-serif;
+	color: $brand-primary;
+	position: relative;
+    padding: 5px 0 0 30px;
+
+	&:before {
+		content: '';
+		display: block;
+		background-image: url('http://dev.designs4theweb.com/zbate/wp-content/themes/wp-understrap/img/quote.png');
+		background-repeat: no-repeat;
+		height: 100px;
+		width: 72px;
+		position: absolute;
+		top: 0;
+		left: 0;
+    	background-size: contain;
+	}
 }
 
 /* INTERSTITIAL REGISTRATION ---------------------*/
@@ -276,6 +327,14 @@ body {
 	display: none;
 	}
 
+	.html-container {
+		margin-bottom: 0;
+	}
+
+	.hr-container {
+		margin-bottom: 15px !important;
+	}
+
 	.nf-form-content {
 	margin: 0;
 	padding: 0;
@@ -294,6 +353,20 @@ body {
 			font-weight: normal;
 		}
 	}
+
+		.password {
+			-webkit-text-security: disc;
+		}
+
+		.nf-field-element {
+				&:after {
+					top: initial !important;
+					bottom: initial !important;
+					right: initial !important;
+					height: 50px !important;
+				}
+			
+		}
 }
 
 
