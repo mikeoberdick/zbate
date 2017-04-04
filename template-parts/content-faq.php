@@ -44,7 +44,7 @@
 
   	<div class = "questionWrapper">
   		<dt><span>Can I use my own agent?</span></dt>
-  		<dd>Sure!  In fact we encourage all of our members to interview and hire any agent they are comfortable with.  Simply enter your agent’s information when you sign up!</dd>
+  		<dd>Sure!  In fact we encourage all of our members to interview and hire any agent they are comfortable with.  Simply make sure your agent is familiar with Zbate and that they are a participating affiliate.</dd>
   	</div>
 
 	<div class = "questionWrapper">
