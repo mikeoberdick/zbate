@@ -59,7 +59,7 @@
 
   	<div class = "questionWrapper">
 		<dt><span>What if my home is already listed or I am in contract to purchase a home?</span></dt>
-		<dd>Zbate is a licensed Realtor owned business and honors the Realtors Code of Ethics and therefore does not want to violate either their code of ethics or professional standards and in no way wants to interfere with an existing contractual relationship.Of course you can ask your agent to participate but ZBATE does not recommend it.</dd>
+		<dd>Zbate is a licensed Realtor owned business and honors the Realtors Code of Ethics and therefore does not want to violate either their code of ethics or professional standards and in no way wants to interfere with an existing contractual relationship.  Of course you can ask your agent to participate but ZBATE does not recommend it.</dd>
 	</div>
   
   <div class = "questionWrapper">
