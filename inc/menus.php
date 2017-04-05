@@ -9,7 +9,8 @@ function d4tw_register_theme_menus() {
   register_nav_menus(
     array(
       'agent-menu' => 'Agent Menu',
-      'buyer-seller-menu' => 'Buyer/Seller Menu'
+      'buyer-seller-menu' => 'Buyer/Seller Menu',
+      'agent-homepage-menu' => 'Agent Homepage Menu'
     )
   );
 }

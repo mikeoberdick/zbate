@@ -107,6 +107,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 					)
 				);
 
+				} else if ( is_page('212') ) {
+
+					wp_nav_menu(
+					array(
+						'theme_location'  => 'agent-homepage-menu',
+						'container_class' => 'collapse navbar-collapse',
+						'container_id'    => 'navbarNavDropdown',
+						'menu_class'      => 'navbar-nav',
+						'fallback_cb'     => '',
+						'menu_id'         => 'main-menu',
+						'walker'          => new WP_Bootstrap_Navwalker(),
+					)
+				);
+
 				} else {
 					wp_nav_menu(
 					array(

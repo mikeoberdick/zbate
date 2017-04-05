@@ -12,7 +12,7 @@
 
 <h1 class = "mb-3">There are three indisputable challenges facing real estate agents when building their business...</h1>
 <div class = "row">
-	<div class = "col-sm-6"><img src = "http://dev.designs4theweb.com/zbate/wp-content/uploads/2017/03/real_estate_agents.jpg"></div>
+	<div class = "col-sm-6"><img src = "<?php echo get_stylesheet_directory_uri() . '/img/how-it-works.jpg';?>"></div>
 	<div class = "larger_text col-sm-6">
 		<ol class = "mt-3">
 		 	<li>There are too many agents competing for the same business.</li>

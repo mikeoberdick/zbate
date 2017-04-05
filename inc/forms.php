@@ -64,6 +64,7 @@ function nf_create_new_user( $form_data ){
 
 		// Use the user id to log in straight away
 		wp_set_auth_cookie( $user_id, true );
+		wp_redirect( 'https://example.com/some/page' );
 	}
 }
 

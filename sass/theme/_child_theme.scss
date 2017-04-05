@@ -105,6 +105,12 @@ body {
 	
 }
 
+.logged-in {
+	.reg-btn {
+		display: none;
+	}
+}
+
 
 
 
@@ -224,10 +230,11 @@ ol {
 #faq {
 	
 	.questionWrapper {
-		background-color: #fff;
+		background-color: $brand-primary;
 	    padding: 20px;
 	    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
-	    margin-bottom: 25px;  
+	    margin-bottom: 25px;
+	    color: #f3f3f5; 
 	}
 
 	dt {
@@ -236,7 +243,7 @@ ol {
 		font-size: 1.5em;
 		font-weight: 300;
 		font-family: 'Raleway', sans-serif;
-		color: $brand-primary;
+		color: #f3f3f5;
 		position: relative;
 
 		@include media-breakpoint-down(md) { 
@@ -254,7 +261,7 @@ ol {
 		    top: 50%;
 		    height: 2px;
 		    width: 13px;
-		    background: $brand-primary;
+		    background: #f3f3f5;
 		    -webkit-backface-visibility: hidden;
 		    backface-visibility: hidden;
 		    -webkit-transition-property: -webkit-transform;
