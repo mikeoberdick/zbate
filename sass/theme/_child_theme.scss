@@ -111,6 +111,16 @@ body {
 	}
 }
 
+.profile-btn {
+	display: none;
+}
+
+.logged-in {
+	.profile-btn {
+		display: block;
+	}
+}
+
 
 
 

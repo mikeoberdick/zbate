@@ -50,3 +50,12 @@ function d4tw_remove_website_from_profile()
 }
 add_action( 'admin_head-user-edit.php', 'd4tw_remove_website_from_profile' );
 add_action( 'admin_head-profile.php',   'd4tw_remove_website_from_profile' );
+
+// Remove the color picker from admin area
+remove_action( 'admin_color_scheme_picker', 'admin_color_scheme_picker' );
+
+// Remove the toolbar option from admin area for non admins
+$user = wp_get_current_user();
+if ( in_array( 'agent', (array) $user->roles ) ) {
+add_filter('show_admin_bar', '__return_false');
+}

@@ -6,7 +6,7 @@
  */
 
 // Create user after form has been sanitised
-add_action( 'ninja_forms_after_submission', 'nf_create_new_user' );
+add_action( 'ninja_forms_after_submission', 'nf_create_new_user');
 function nf_create_new_user( $form_data ){
 	$form_id = $form_data[ 'form_id' ];
 
@@ -63,7 +63,16 @@ function nf_create_new_user( $form_data ){
 		add_user_meta( $user_id, 'license_number', $license_number );
 
 		// Use the user id to log in straight away
-		wp_set_auth_cookie( $user_id, true );
+		wp_set_auth_cookie( $user_id, false );
+
+		$creds = array(
+        'user_login'    => $username,
+        'user_password' => $password,
+        'remember'      => true
+    );
+ 
+    $user = wp_signon( $creds, false );
+
 	}
 }
 

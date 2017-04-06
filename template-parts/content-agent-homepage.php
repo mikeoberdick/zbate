@@ -10,6 +10,9 @@
 
     <div class="entry-content">
 
+    <?php if ( is_user_logged_in() ) {
+    	?>
+
     <h1>AGENT INFORMATION</h1>
 
     <div class = "row">
@@ -34,6 +37,13 @@
 			</div>
 		</div>
 	</div>
+	<?php } 
+
+	else {
+		echo 'You must be logged in to access this page';
+		}
+		
+		?>
 	
 	</div><!-- .entry-content -->
 
