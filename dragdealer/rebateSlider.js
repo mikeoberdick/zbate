@@ -34,6 +34,7 @@ var windowMobileWidth = 860,
 
     new Dragdealer('home_price_slider', {
         steps:1200,
+        slide:false,
         animationCallback: function(x, y) {
             if (init === 0) {
                 init++;

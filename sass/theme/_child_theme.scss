@@ -94,6 +94,10 @@ body {
 		a {
 			color: $brand-primary;
 		}
+
+		.btn a {
+			color: #ffffff;
+		}
 	}
 
 	img {
@@ -106,18 +110,15 @@ body {
 }
 
 .logged-in {
-	.reg-btn {
+	.logged-out-btn {
 		display: none;
 	}
 }
 
-.profile-btn {
-	display: none;
-}
-
-.logged-in {
-	.profile-btn {
-		display: block;
+.editProfileLink {
+	font-size: 12px;
+	&:hover {
+		text-decoration: none;
 	}
 }
 

@@ -139,6 +139,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div><!-- .container -->
 			<?php endif; ?>
 
+			<?php if ( is_user_logged_in() ) {
+					$current_user = wp_get_current_user();
+
+					echo 'Hi ' . $current_user->user_firstname . '!&nbsp';
+					echo '<a href = "' . get_edit_user_link () . '" class = "editProfileLink">(Edit Profile)</a>';
+					} ?>
+
 		</nav><!-- .site-navigation -->
 
 	</div><!-- .wrapper-navbar end -->

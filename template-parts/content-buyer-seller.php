@@ -22,7 +22,7 @@
 
 	<div class = "row">
 		<div class = "col-sm-12">
-			<a class="btn btn-outline-primary btn-lg text-uppercase mb-2" href="buyer-seller-registration">Register Now</a>
+			<a class="btn btn-primary btn-lg text-uppercase mb-2" href="buyer-seller-registration">Register Now</a>
 			<p><i>***Rebate amounts are determined based on actual commission collected.</i></p>
 		</div>
 	</div>

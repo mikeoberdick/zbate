@@ -9303,12 +9303,20 @@ body {
 #wrapper-navbar #main-menu a {
   color: #42517f; }
 
+#wrapper-navbar #main-menu .btn a, #wrapper-navbar #main-menu .wpcf7 input[type=submit] a, .wpcf7 #wrapper-navbar #main-menu input[type=submit] a {
+  color: #ffffff; }
+
 @media (max-width: 767px) {
   #wrapper-navbar img {
     width: 150px; } }
 
-.logged-in .reg-btn {
+.logged-in .logged-out-btn {
   display: none; }
+
+.editProfileLink {
+  font-size: 12px; }
+  .editProfileLink:hover {
+    text-decoration: none; }
 
 /*------------------------------------------------*/
 /*-------------------[MENU]-----------------------*/

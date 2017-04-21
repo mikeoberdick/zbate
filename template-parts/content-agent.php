@@ -24,7 +24,7 @@
 
 	<div class = "row">
 		<div class = "col-sm-12">
-			<a class="btn btn-outline-primary btn-lg text-uppercase mb-5" href="agent-registration">Register Now</a>
+			<a class="btn btn-primary btn-lg text-uppercase mb-5" href="agent-registration">Register Now</a>
 		</div>
 	</div>
 	
