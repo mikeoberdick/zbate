@@ -231,8 +231,25 @@ ol {
 /* INTERSTITIAL REGISTRATION ---------------------*/
 
 #interstitialRegistration {
+	.registerCard {
+		@include media-breakpoint-down(lg) {
+			border: solid 3px $brand-primary;
+			@include border-radius(5px);
+			padding: 25px;
+			white-space: normal;
+		}
+	}
+
+	.btn {
+		max-width: 450px;
+	}
 	#customer {
-		border-right: solid 1px;
+		@include media-breakpoint-up(lg) { 
+			border-right: solid 1px;
+		}
+		@include media-breakpoint-down(lg) { 
+			margin-bottom: 25px;
+		}
 	}
 }
 

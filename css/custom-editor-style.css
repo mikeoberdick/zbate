@@ -9405,8 +9405,23 @@ ol {
     background-size: contain; }
 
 /* INTERSTITIAL REGISTRATION ---------------------*/
-#interstitialRegistration #customer {
-  border-right: solid 1px; }
+@media (max-width: 1199px) {
+  #interstitialRegistration .registerCard {
+    border: solid 3px #42517f;
+    border-radius: 5px;
+    padding: 25px;
+    white-space: normal; } }
+
+#interstitialRegistration .btn, #interstitialRegistration .wpcf7 input[type=submit], .wpcf7 #interstitialRegistration input[type=submit] {
+  max-width: 450px; }
+
+@media (min-width: 992px) {
+  #interstitialRegistration #customer {
+    border-right: solid 1px; } }
+
+@media (max-width: 1199px) {
+  #interstitialRegistration #customer {
+    margin-bottom: 25px; } }
 
 /* FAQ -------------------------------------------*/
 #faq .questionWrapper {

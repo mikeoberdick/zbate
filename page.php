@@ -42,7 +42,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
       					get_template_part( 'template-parts/content', 'how-it-works' );
     				}
 
-    				else if( is_page( 'choose-an-account' ) ) {
+    				else if( is_page( 'register' ) ) {
       					get_template_part( 'template-parts/content', 'interstitial-registration' );
     				}
 
