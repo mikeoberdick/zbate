@@ -16,7 +16,7 @@
 	
 		<div class = "row">
 			<div class = "col-sm-4">
-				<img src = "http://www.zbate.dev/wp-content/uploads/2017/03/fotolia_84065217.jpg">
+				<img src = "<?php echo bloginfo('url'); ?>/wp-content/uploads/2017/03/fotolia_84065217.jpg">
 			</div>
 
 			<div class = "col-sm-8">
@@ -33,7 +33,7 @@
 		<div class = "row mt-5">
 			<div id = "cta" class = "col-sm-12">
 			<h1 class = "mb-3">Get Your ZBATE REBATE Today!</h1>
-				<a class="btn btn-primary btn-lg text-uppercase" href="buyer-seller-registration">Register Now</a>
+				<a class="btn btn-primary btn-lg text-uppercase" href="<?php echo bloginfo('url'); ?>/buyer-seller-registration">Register Now</a>
 			</div>
 		</div>
 	</div><!-- .entry-content -->

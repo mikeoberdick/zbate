@@ -42,7 +42,7 @@ get_header(); ?>
 					<?php endwhile; // end of the loop ?>
 
 					<div class = "col-sm-12 text-center register_button">
-						<a href = "register" class = "btn btn-primary btn-lg hpButton text-uppercase mb-5">Register</a><p class = "disclaimer">*Amounts shown are for illustrative purposes only and actual rebate will be determined based on commission collected.</p>
+						<a href = "<?php echo bloginfo('url'); ?>/register" class = "btn btn-primary btn-lg hpButton text-uppercase mb-5">Register</a><p class = "disclaimer">*Amounts shown are for illustrative purposes only and actual rebate will be determined based on commission collected.</p>
 					</div>
 					
 				
