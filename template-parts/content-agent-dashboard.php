@@ -10,18 +10,13 @@
 
     <div class="entry-content">
 
-    <?php if ( is_user_logged_in() ) {
-    	?>
-
-    <h1>AGENT INFORMATION</h1>
-
     <div class = "row">
 		<div class = "col-sm-8">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ut, sit fugiat vel, provident vitae ipsum reiciendis doloribus maxime commodi architecto, illo id ex assumenda obcaecati non omnis soluta porro!</p>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ut, sit fugiat vel, provident vitae ipsum reiciendis doloribus maxime commodi architecto, illo id ex assumenda obcaecati non omnis soluta porro!</p>
+			<h3>Edit Your Profile</h3>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ut, sit fugiat vel, provident vitae ipsum reiciendis doloribus maxime commodi architecto, illo id ex assumenda obcaecati non omnis soluta porro!</p>
+			<?php echo do_shortcode('[ninja_form id=5]'); ?>
+
 		</div>
 		<div class = "col-sm-4">
 			<div>
@@ -41,13 +36,6 @@
 			</div>
 		</div>
 	</div>
-	<?php } 
-
-	else {
-		echo 'You must be logged in to access this page';
-		}
-		
-		?>
 	
 	</div><!-- .entry-content -->
 

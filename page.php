@@ -58,8 +58,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
       					get_template_part( 'template-parts/content', 'buyer-seller' );
     				}
 
-    				else if( is_page( 'agent-homepage' ) ) {
-      					get_template_part( 'template-parts/content', 'agent-homepage' );
+    				else if( is_page( 'agent-dashboard' ) ) {
+      					get_template_part( 'template-parts/content', 'agent-dashboard' );
     				}
 
 					else {

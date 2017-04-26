@@ -39,10 +39,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="container">
 		<?php endif; ?>
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
 					<!-- Your site title as branding in the menu -->
 					<?php if ( ! has_custom_logo() ) { ?>
 
@@ -60,6 +56,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<?php } else {
 						the_custom_logo();
 					} ?><!-- end custom logo -->
+
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
 
 				<!-- The WordPress Menu goes here -->
 
@@ -134,17 +134,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 					)
 				);
 				} ?>
+
+				<?php $user = wp_get_current_user();
+				if ( in_array( 'agent', (array) $user->roles ) ) { ?>
+						<a href="<?php echo wp_logout_url( get_permalink() ); ?>" class = "btn btn-primary btn-sm">Logout</a>
+				<?php } ?>
 				
 			<?php if ( 'container' == $container ) : ?>
 			</div><!-- .container -->
 			<?php endif; ?>
-
-			<?php if ( is_user_logged_in() ) {
-					$current_user = wp_get_current_user();
-
-					echo 'Hi ' . $current_user->user_firstname . '!&nbsp';
-					echo '<a href = "' . get_edit_user_link () . '" class = "editProfileLink">(Edit Profile)</a>';
-					} ?>
 
 		</nav><!-- .site-navigation -->
 

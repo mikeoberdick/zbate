@@ -9264,13 +9264,21 @@ body {
   .titleWrapper .page_header {
     color: #fff;
     font-size: 8vh;
-    padding: 50px;
+    padding: 100px 50px;
     text-align: center;
     text-transform: uppercase;
     text-rendering: optimizeLegibility; }
     @media (max-width: 991px) {
       .titleWrapper .page_header {
         font-size: 5vh; } }
+
+.submitButton {
+  background: #42517f !important;
+  border-radius: 5px;
+  text-transform: uppercase; }
+  .submitButton:hover {
+    color: #ffffff !important;
+    background-color: #313c5d !important; }
 
 /*------------------------------------------------*/
 /*---------------[MAIN LAYOUT INFO]---------------*/
@@ -9281,24 +9289,19 @@ body {
 .navbar {
   background-color: #bbbbbb;
   border-top: solid 10px #42517f; }
+  @media (max-width: 1199px) {
+    .navbar {
+      text-align: center; } }
   .navbar a {
     font-weight: bold; }
 
 #wrapper-navbar #navbarNavDropdown {
   justify-content: flex-end; }
-  #wrapper-navbar #navbarNavDropdown .btn-outline-primary, #wrapper-navbar #navbarNavDropdown .wpcf7 input[type=submit], .wpcf7 #wrapper-navbar #navbarNavDropdown input[type=submit] {
-    border-width: 2px;
-    background-color: inherit;
-    transition: all .5s; }
-    #wrapper-navbar #navbarNavDropdown .btn-outline-primary:hover, #wrapper-navbar #navbarNavDropdown .wpcf7 input[type=submit]:hover, .wpcf7 #wrapper-navbar #navbarNavDropdown input[type=submit]:hover {
-      background-color: #42517f; }
-    #wrapper-navbar #navbarNavDropdown .btn-outline-primary:active, #wrapper-navbar #navbarNavDropdown .wpcf7 input[type=submit]:active, .wpcf7 #wrapper-navbar #navbarNavDropdown input[type=submit]:active {
-      background-color: inherit; }
-    #wrapper-navbar #navbarNavDropdown .btn-outline-primary a, #wrapper-navbar #navbarNavDropdown .wpcf7 input[type=submit] a, .wpcf7 #wrapper-navbar #navbarNavDropdown input[type=submit] a {
-      transition: all .5s;
-      font-weight: normal; }
-      #wrapper-navbar #navbarNavDropdown .btn-outline-primary a:hover, #wrapper-navbar #navbarNavDropdown .wpcf7 input[type=submit] a:hover, .wpcf7 #wrapper-navbar #navbarNavDropdown input[type=submit] a:hover {
-        color: #ffffff; }
+  @media (max-width: 1199px) {
+    #wrapper-navbar #navbarNavDropdown .btn, #wrapper-navbar #navbarNavDropdown .wpcf7 input[type=submit], .wpcf7 #wrapper-navbar #navbarNavDropdown input[type=submit] {
+      width: 50%; } }
+  #wrapper-navbar #navbarNavDropdown .btn a, #wrapper-navbar #navbarNavDropdown .wpcf7 input[type=submit] a, .wpcf7 #wrapper-navbar #navbarNavDropdown input[type=submit] a {
+    padding: 5px; }
 
 #wrapper-navbar #main-menu a {
   color: #42517f; }
@@ -9310,13 +9313,23 @@ body {
   #wrapper-navbar img {
     width: 150px; } }
 
-.logged-in .logged-out-btn {
+.editProfile {
   display: none; }
 
-.editProfileLink {
-  font-size: 12px; }
-  .editProfileLink:hover {
-    text-decoration: none; }
+.agentDash {
+  display: none; }
+
+.logged-in .registerBtn {
+  display: none; }
+
+.logged-in .loginBtn {
+  display: none; }
+
+.logged-in .editProfile {
+  display: block; }
+
+.logged-in .agentDash {
+  display: block; }
 
 /*------------------------------------------------*/
 /*-------------------[MENU]-----------------------*/
@@ -9404,6 +9417,18 @@ ol {
     left: 0;
     background-size: contain; }
 
+/* BUYER/SELLER ----------------------------------*/
+#buyer-seller .disclaimer {
+  font-style: italic;
+  color: #42517f; }
+
+#cta {
+  border: solid 3px #42517f;
+  border-radius: 5px;
+  padding: 25px;
+  text-align: center; }
+
+/* AGENT -----------------------------------------*/
 /* INTERSTITIAL REGISTRATION ---------------------*/
 @media (max-width: 1199px) {
   #interstitialRegistration .registerCard {
@@ -9414,8 +9439,12 @@ ol {
 
 #interstitialRegistration .btn, #interstitialRegistration .wpcf7 input[type=submit], .wpcf7 #interstitialRegistration input[type=submit] {
   max-width: 450px; }
+  @media (max-width: 1199px) {
+    #interstitialRegistration .btn, #interstitialRegistration .wpcf7 input[type=submit], .wpcf7 #interstitialRegistration input[type=submit] {
+      margin: 0 auto;
+      white-space: normal; } }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #interstitialRegistration #customer {
     border-right: solid 1px; } }
 
