@@ -9319,6 +9319,9 @@ body {
 .agentDash {
   display: none; }
 
+.logoutBtn {
+  display: none; }
+
 .logged-in .registerBtn {
   display: none; }
 
@@ -9329,6 +9332,9 @@ body {
   display: block; }
 
 .logged-in .agentDash {
+  display: block; }
+
+.logged-in .logoutBtn {
   display: block; }
 
 /*------------------------------------------------*/
@@ -9553,12 +9559,6 @@ ol {
 
 .nf-form-cont .password {
   -webkit-text-security: disc; }
-
-.nf-form-cont .nf-field-element:after {
-  top: initial !important;
-  bottom: initial !important;
-  right: initial !important;
-  height: 50px !important; }
 
 /*------------------------------------------------*/
 /*---------------------[FOOTER]-------------------*/

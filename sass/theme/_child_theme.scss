@@ -93,26 +93,6 @@ body {
 				padding: 5px;
 			}
 		}
-
-		// .btn-outline-primary {
-		// 	border-width: 2px;
-		// 	background-color: inherit;
-		// 	transition: all .5s;
-		// 	&:hover {
-		// 			background-color: $brand-primary;
-		// 		}
-		// 	&:active {
-		// 		background-color: inherit;
-		// 	}
-		// 	a {
-		// 		transition: all .5s;
-		// 		font-weight: normal;
-		// 		&:hover {
-		// 			color: #ffffff;
-		// 		}
-		// 	}
-			
-		// }
 	}
 
 	#main-menu  {
@@ -142,6 +122,10 @@ body {
 	display: none;
 }
 
+.logoutBtn {
+	display: none;
+}
+
 .logged-in {
 	.registerBtn {
 		display: none;
@@ -156,6 +140,10 @@ body {
 	}
 
 	.agentDash {
+		display: block;
+	}
+
+	.logoutBtn {
 		display: block;
 	}
 }

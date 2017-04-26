@@ -13,8 +13,6 @@
     <div class = "row">
 		<div class = "col-sm-8">
 
-			<h3>Edit Your Profile</h3>
-
 			<?php echo do_shortcode('[ninja_form id=5]'); ?>
 
 		</div>

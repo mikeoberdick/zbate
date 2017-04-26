@@ -20,9 +20,3 @@ function d4tw_disable_admin_bar() {
         show_admin_bar(false);
     }
 }
-
-// Remove the toolbar option from admin area for non admins
-$user = wp_get_current_user();
-if ( in_array( 'subscriber', (array) $user->roles ) ) {
-add_filter('show_admin_bar', '__return_false');
-}

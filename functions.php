@@ -48,13 +48,7 @@ require get_stylesheet_directory() . '/inc/scripts.php';
 require get_stylesheet_directory() . '/inc/widgets.php';
 
 /**
- * Add form functionality
- *
- */
-require get_stylesheet_directory() . '/inc/forms.php';
-
-/**
- * Add form functionality
+ * Add user functionality
  *
  */
 require get_stylesheet_directory() . '/inc/users.php';
