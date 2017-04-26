@@ -9319,6 +9319,16 @@ body {
 .agentDash {
   display: none; }
 
+@media (max-width: 1199px) {
+  .registerBtn {
+    margin-right: 0 !important;
+    margin-bottom: 10px; } }
+
+@media (max-width: 1199px) {
+  .loginBtn {
+    margin-right: 0 !important;
+    margin-bottom: 10px; } }
+
 .logoutBtn {
   display: none; }
 
@@ -9330,12 +9340,25 @@ body {
 
 .logged-in .editProfile {
   display: block; }
+  @media (max-width: 1199px) {
+    .logged-in .editProfile {
+      margin-right: 0 !important;
+      margin-bottom: 10px; } }
 
 .logged-in .agentDash {
   display: block; }
+  @media (max-width: 1199px) {
+    .logged-in .agentDash {
+      margin-right: 0 !important;
+      margin-bottom: 10px;
+      white-space: normal; } }
 
 .logged-in .logoutBtn {
   display: block; }
+  @media (max-width: 1199px) {
+    .logged-in .logoutBtn {
+      margin-right: 0 !important;
+      margin-bottom: 10px; } }
 
 /*------------------------------------------------*/
 /*-------------------[MENU]-----------------------*/

@@ -122,6 +122,20 @@ body {
 	display: none;
 }
 
+.registerBtn {
+	@include media-breakpoint-down(lg) { 
+			margin-right: 0 !important;
+    		margin-bottom: 10px;
+	}
+}
+
+.loginBtn {
+	@include media-breakpoint-down(lg) { 
+			margin-right: 0 !important;
+    		margin-bottom: 10px;
+	}
+}
+
 .logoutBtn {
 	display: none;
 }
@@ -137,14 +151,30 @@ body {
 
 	.editProfile {
 		display: block;
+
+		@include media-breakpoint-down(lg) { 
+			margin-right: 0 !important;
+    		margin-bottom: 10px;
+		}
 	}
 
 	.agentDash {
 		display: block;
+
+		@include media-breakpoint-down(lg) { 
+			margin-right: 0 !important;
+    		margin-bottom: 10px;
+    		white-space: normal;
+		}
 	}
 
 	.logoutBtn {
 		display: block;
+
+		@include media-breakpoint-down(lg) { 
+			margin-right: 0 !important;
+    		margin-bottom: 10px;
+		}
 	}
 }
 
