@@ -13,7 +13,7 @@
     <div class = "row">
 		<div class = "col-sm-8">
 
-			<?php echo do_shortcode('[ninja_form id=5]'); ?>
+		<?php echo do_shortcode('[ninja_form id=5]'); ?>
 
 		</div>
 		<div class = "col-sm-4">

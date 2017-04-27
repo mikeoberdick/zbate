@@ -62,6 +62,10 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
       					get_template_part( 'template-parts/content', 'agent-dashboard' );
     				}
 
+    				else if( is_page( 'agent-login' ) ) {
+      					get_template_part( 'template-parts/content', 'agent-login' );
+    				}
+
 					else {
 					   get_template_part( 'loop-templates/content', 'page' );
 					}
