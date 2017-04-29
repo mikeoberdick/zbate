@@ -441,6 +441,22 @@ ol {
 	}
 }
 
+/* Contact ---------------------------------------*/
+
+.contactSection {
+	font-size: 4vh;
+	text-align: center;
+
+	@include media-breakpoint-down(sm) { 
+			font-size: 2.5vh;
+		}
+
+	i {
+		margin-right: 15px;
+		color: $brand-primary;
+	}
+}
+
 
 /*------------------------------------------------*/
 /*--------------------[SIDEBAR]-------------------*/
@@ -486,16 +502,6 @@ ol {
 		.password {
 			-webkit-text-security: disc;
 		}
-
-		// .nf-field-element {
-		// 		&:after {
-		// 			top: initial !important;
-		// 			bottom: initial !important;
-		// 			right: initial !important;
-		// 			height: 50px !important;
-		// 		}
-			
-		// }
 }
 
 
