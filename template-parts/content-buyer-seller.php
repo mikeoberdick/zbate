@@ -16,7 +16,7 @@
 	
 		<div class = "row">
 			<div class = "col-sm-4">
-				<img src = "<?php echo bloginfo('url'); ?>/wp-content/uploads/2017/03/fotolia_84065217.jpg">
+				<img src = "<?php echo bloginfo('url'); ?>/wp-content/uploads/2017/04/Fotolia_91431339_XS.jpg">
 			</div>
 
 			<div class = "col-sm-8">
