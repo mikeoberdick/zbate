@@ -1,0 +1,607 @@
+/*
+Theme Name:  Designs 4 The Web
+Theme URI:   http://designs4theweb.com
+Version:     1.0
+Description: A custom built theme for Designs 4 The Web.
+Author:      Designs 4 The Web
+Author URI:  http://designs4theweb.com
+Template:    Understrap
+*/
+
+/*------------------------------------------------*/
+/*-----------------[BASIC STYLES]-----------------*/
+/*------------------------------------------------*/
+
+h1, h2, h3, h4, h5 {
+	color: $brand-primary;
+	font-family: $header-font;
+	font-weight: bold;
+}
+
+body {
+	color: #808080;
+	font-family: $body-font;
+	background-color: #f3f3f5;
+}
+
+.entry-header {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.titleWrapper {
+	background-color: rgba(0,0,0,.4);
+
+	.page_header {
+		color: #fff;
+	    font-size: 8vh;
+	    padding: 100px 50px;
+	    text-align: center;
+	    text-transform: uppercase;
+	    text-rendering: optimizeLegibility;
+
+	    @include media-breakpoint-down(md) { 
+			font-size: 5vh;
+		}
+	}
+}
+
+.submitButton {
+	background: #42517f !important;
+    border-radius: 5px;
+    text-transform: uppercase;
+
+    &:hover {
+    	color: #ffffff !important;
+    	background-color: #313c5d !important;
+    }
+}
+
+/*------------------------------------------------*/
+/*---------------[MAIN LAYOUT INFO]---------------*/
+/*------------------------------------------------*/
+
+
+
+/*------------------------------------------------*/
+/*--------------------[HEADER]--------------------*/
+/*------------------------------------------------*/
+
+.navbar {
+
+	 @include media-breakpoint-down(lg) { 
+			text-align: center;
+		}
+
+	background-color: #bbbbbb;
+	border-top: solid 10px $brand-primary;
+	a {
+		font-weight: bold;
+	}
+}
+
+#wrapper-navbar {
+	#navbarNavDropdown {
+		justify-content: flex-end;
+
+		.btn {
+			@include media-breakpoint-down(lg) { 
+				width: 50%;
+		}
+			a {
+				padding: 5px;
+			}
+		}
+	}
+
+	#main-menu  {
+		a {
+			color: $brand-primary;
+		}
+
+		.btn a {
+			color: #ffffff;
+		}
+	}
+
+	img {
+		@include media-breakpoint-down(sm) { 
+			width: 150px;
+		}
+	}
+
+	
+}
+
+.editProfile {
+	display: none;
+}
+
+.agentDash {
+	display: none;
+}
+
+.registerBtn {
+	@include media-breakpoint-down(lg) { 
+			margin-right: 0 !important;
+    		margin-bottom: 10px;
+	}
+}
+
+.loginBtn {
+	@include media-breakpoint-down(lg) { 
+			margin-right: 0 !important;
+    		margin-bottom: 10px;
+	}
+}
+
+.logoutBtn {
+	display: none;
+}
+
+.logged-in {
+	.registerBtn {
+		display: none;
+	}
+
+	.loginBtn {
+		display: none;
+	}
+
+	.editProfile {
+		display: block;
+
+		@include media-breakpoint-down(lg) { 
+			margin-right: 0 !important;
+    		margin-bottom: 10px;
+		}
+	}
+
+	.agentDash {
+		display: block;
+
+		@include media-breakpoint-down(lg) { 
+			margin-right: 0 !important;
+    		margin-bottom: 10px;
+    		white-space: normal;
+		}
+	}
+
+	.logoutBtn {
+		display: block;
+
+		@include media-breakpoint-down(lg) { 
+			margin-right: 0 !important;
+    		margin-bottom: 10px;
+		}
+	}
+}
+
+
+
+
+/*------------------------------------------------*/
+/*-------------------[MENU]-----------------------*/
+/*------------------------------------------------*/
+
+.navbar-toggler {
+	background: $brand-primary;
+}
+
+.dropdown-menu .menu-item a.nav-link:hover {
+	background-color: initial;
+}
+
+.navbar-nav {
+	align-items: center;
+}
+
+/*------------------------------------------------*/
+/*----------------------[PAGES]-------------------*/
+/*------------------------------------------------*/
+
+/* HOMEPAGE --------------------------------------*/
+
+.heroSection {
+    background-size: cover;
+    background-repeat: no-repeat;
+
+	.hpButton {
+		@include shadow;
+	}
+}
+
+/* HOW IT WORKS ----------------------------------*/
+
+.highlight_text {
+	color: $brand-primary;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.hiwCTA {
+	background-color: #ffffff;
+    border: solid 3px $brand-primary;
+    color: $brand-primary;
+    font-size: 20px;
+    padding: 25px;
+    @include border-radius(8px);
+    font-family: 'Raleway', sans-serif;
+}
+
+ol {
+	counter-reset: li;
+	list-style: none;
+	*list-style: decimal;
+	padding-left: 0 !important;
+
+	li {
+		position: relative;
+		padding-left: 60px;
+		min-height: 60px;
+		line-height: 48px;
+
+		&:before {
+			content: counter(li);
+			counter-increment: li;
+			color: #fff;
+			background: $brand-primary;
+			border-radius: 50%;
+			font-size: 18px;
+			width: 48px;
+			height: 48px;
+			line-height: 48px;
+			text-align: center;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			@include shadow;
+		}
+	}
+}
+
+#ourGoal {
+	font-size: 3vh;
+	font-family: 'raleway', sans-serif;
+	color: $brand-primary;
+	position: relative;
+    padding: 5px 0 0 30px;
+
+	&:before {
+		content: '';
+		display: block;
+		background-image: url('http://dev.designs4theweb.com/zbate/wp-content/themes/wp-understrap/img/quote.png');
+		background-repeat: no-repeat;
+		height: 100px;
+		width: 72px;
+		position: absolute;
+		top: 0;
+		left: 0;
+    	background-size: contain;
+	}
+}
+
+/* BUYER/SELLER ----------------------------------*/
+
+#buyer-seller {
+
+.disclaimer {
+	font-style: italic;
+	color: $brand-primary;
+	}
+}
+
+#cta {
+	border: solid 3px $brand-primary;
+	@include border-radius(5px);
+	padding: 25px;
+	text-align: center;
+	}
+
+/* AGENT -----------------------------------------*/
+
+
+/* LOGIN -----------------------------------------*/
+
+.loginForm {
+	border: solid 2px #42517f;
+    @include border-radius(5px);
+    padding: 25px;
+    text-align: center;
+
+    @include media-breakpoint-down(sm) {
+    	border: 0;
+    }
+}
+
+
+
+/* INTERSTITIAL REGISTRATION ---------------------*/
+
+#interstitialRegistration {
+	.registerCard {
+		@include media-breakpoint-down(lg) {
+			border: solid 3px $brand-primary;
+			@include border-radius(5px);
+			padding: 25px;
+			white-space: normal;
+		}
+	}
+
+	.btn {
+		max-width: 450px;
+		@include media-breakpoint-down(lg) {
+			margin: 0 auto;
+			white-space: normal;
+		}
+	}
+	#customer {
+		@include media-breakpoint-up(xl) { 
+			border-right: solid 1px;
+		}
+		@include media-breakpoint-down(lg) { 
+			margin-bottom: 25px;
+		}
+	}
+}
+
+/* FAQ -------------------------------------------*/
+
+#faq {
+	
+	.questionWrapper {
+		background-color: $brand-primary;
+	    padding: 20px;
+	    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+	    margin-bottom: 25px;
+	    color: #f3f3f5; 
+	}
+
+	dt {
+		font-weight: 300;
+		cursor: pointer;
+		font-size: 1.5em;
+		font-weight: 300;
+		font-family: 'Raleway', sans-serif;
+		color: #f3f3f5;
+		position: relative;
+
+		@include media-breakpoint-down(md) { 
+			font-size: 1em;
+		}
+
+		span {
+			display: block;
+			padding-right: 25px;
+
+		&:before, &:after {
+			content: '';
+			position: absolute;
+		    right: 0;
+		    top: 50%;
+		    height: 2px;
+		    width: 13px;
+		    background: #f3f3f5;
+		    -webkit-backface-visibility: hidden;
+		    backface-visibility: hidden;
+		    -webkit-transition-property: -webkit-transform;
+		    -moz-transition-property: -moz-transform;
+		    transition-property: transform;
+		    -webkit-transition-duration: 0.2s;
+		    -moz-transition-duration: 0.2s;
+		    transition-duration: 0.2s;
+		}
+
+		&:before {
+			-webkit-transform: rotate(45deg);
+		    -moz-transform: rotate(45deg);
+		    -ms-transform: rotate(45deg);
+		    -o-transform: rotate(45deg);
+		    transform: rotate(45deg);
+		    right: 8px;
+		}
+
+		&:after {
+			-webkit-transform: rotate(-45deg);
+		    -moz-transform: rotate(-45deg);
+		    -ms-transform: rotate(-45deg);
+		    -o-transform: rotate(-45deg);
+		    transform: rotate(-45deg);
+		}
+
+		}
+	}
+
+	.expanded {
+		span {
+			&:before {
+				-webkit-transform: rotate(-45deg);
+			    -moz-transform: rotate(-45deg);
+			    -ms-transform: rotate(-45deg);
+			    -o-transform: rotate(-45deg);
+			    transform: rotate(-45deg);
+			}
+
+			&:after {
+				    -webkit-transform: rotate(45deg);
+				    -moz-transform: rotate(45deg);
+				    -ms-transform: rotate(45deg);
+				    -o-transform: rotate(45deg);
+				    transform: rotate(45deg);
+			}
+		}
+	}
+	
+	dd {
+		display: none;
+		font-size: 1em;
+		margin-top: 25px;
+	}
+}
+
+
+/*------------------------------------------------*/
+/*--------------------[SIDEBAR]-------------------*/
+/*------------------------------------------------*/
+
+/*------------------------------------------------*/
+/*---------------------[FORMS]--------------------*/
+/*------------------------------------------------*/
+
+.nf-form-cont {
+	
+	.nf-form-fields-required {
+	display: none;
+	}
+
+	.html-container {
+		margin-bottom: 0;
+	}
+
+	.hr-container {
+		margin-bottom: 15px !important;
+	}
+
+	.nf-form-content {
+	margin: 0;
+	padding: 0;
+	}
+
+	.field-wrap > div input, .field-wrap textarea, .field-wrap select, .field-wrap .pikaday__container, .field-wrap .pikaday__display, .field-wrap .listselect-wrap > div {
+		max-width: 500px;
+	}
+
+	.liststate-container {
+		max-width: 200px;
+	}
+
+	.t-and-c {
+		label {
+			font-weight: normal;
+		}
+	}
+
+		.password {
+			-webkit-text-security: disc;
+		}
+
+		// .nf-field-element {
+		// 		&:after {
+		// 			top: initial !important;
+		// 			bottom: initial !important;
+		// 			right: initial !important;
+		// 			height: 50px !important;
+		// 		}
+			
+		// }
+}
+
+
+
+/*------------------------------------------------*/
+/*---------------------[FOOTER]-------------------*/
+/*------------------------------------------------*/
+
+#wrapper-footer {
+	color: $brand-secondary;
+	padding-top: 0;
+	padding-bottom: 0;
+	text-transform: uppercase;
+	font-size: 12px;
+
+	#footerWidgets {
+		padding: 50px 0;
+	}
+
+	h5 {
+			padding-bottom: 5px;
+		    border-bottom: solid 2px;
+		    text-transform: uppercase;
+		    color: $brand-primary
+		}
+
+	ul {
+		padding-left: 0;
+		list-style: none;
+
+		li {
+			margin-bottom: 5px;
+
+			a {
+				color: $brand-primary;
+				text-transform: uppercase;
+				font-size: 12px;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+#bottomFooter {
+	background-color: $brand-primary;
+	color: #fff;
+	padding-top: 25px;
+	padding-bottom: 25px;
+
+	.footerLink {
+		font-size: 12px;
+
+		@include media-breakpoint-down(md) { 
+			float: none;
+		}
+	}
+
+	a {
+		color: #fff;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	@include media-breakpoint-down(md) { 
+			text-align: center;;
+		}
+}
+
+/*------------------------------------------------*/
+/*---------------[RESPONSIVE LAYOUTS]-------------*/
+/*------------------------------------------------*/
+
+// Less than 544px
+@include media-breakpoint-only(xs) {  }
+
+// 544px to 767px
+@include media-breakpoint-only(sm) {  }
+
+// 768px to 991px
+@include media-breakpoint-only(md) {  }
+
+// 992px to 1999px
+@include media-breakpoint-only(lg) {  }
+
+// Greater than 1200px
+@include media-breakpoint-only(xl) {  }
+
+@include media-breakpoint-up(xs) {  }
+@include media-breakpoint-up(sm) {  }
+@include media-breakpoint-up(md) {  }
+@include media-breakpoint-up(lg) {  }
+@include media-breakpoint-up(xl) {  }
+
+@include media-breakpoint-down(xs) {  }
+
+@include media-breakpoint-down(sm) {  }
+	
+@include media-breakpoint-down(md) { 
+	.register_button {
+			margin-bottom: 15px; 
+			} 
+	}
+@include media-breakpoint-down(lg) {  }
+@include media-breakpoint-down(xl) {  }

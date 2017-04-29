@@ -1,0 +1,194 @@
+#opacityLayer {
+    background-color: rgba(0, 0, 0, 0.50);
+    padding: 100px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+@media (min-width: 1200px) {
+    #opacityLayer {
+      padding: 100px 275px;
+  }
+}
+
+@media (max-width: 590px) {
+    #opacityLayer {
+      padding: 25px;
+  }
+}
+
+#hpCTA h1 {
+  color: #fff;
+  font-size: 5vh;
+}
+
+@media (max-width: 590px) {
+    #hpCTA h1 {
+      font-size: 3vh !important;
+  }
+
+  span.range {
+    font-size: 12px;
+  }
+}
+
+.homePrice, .rebateAmount {
+    padding: 0 0 0 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.rebateHeader span {
+  font-size: 18px;
+  vertical-align: top;
+}
+
+@media (max-width: 590px) {
+    .homePrice, .rebateAmount {
+      font-size: 18px;
+  }
+}
+
+.range-holder {
+  margin: 0;
+  padding: 0 0 250px;
+  width: 100%;
+}
+
+@media (max-width: 590px) {
+  .range-holder {
+    padding-bottom: 200px;
+  }
+}
+
+.range-holder .range {
+  display: inline;
+}
+
+.range-left, .range-right {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.dragdealer {
+    position: relative;
+    height: 14px;
+    background: #ccc;
+    border-radius: 10px;
+}
+
+.stripe {
+  background: #42517f;
+    background: -webkit-linear-gradient(left, #C3AAAA, #42517f);
+    background: linear-gradient(to right, #C3AAAA, #42517f4);
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 12px;
+    border-top: 1px solid #a7a7a7 !important;
+    border-radius: 10px;
+}
+
+.infobox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: -181px;
+    margin-top: 55px;
+    width: 400px;
+    background: #FFF;
+    padding: 0px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border: #ccc solid 1px;
+    box-shadow: 0 4px 6px 0 rgba(29,21,93,0.1);
+}
+
+@media (max-width: 590px) {
+    .infobox {
+      width: 240px;
+  }
+}
+
+.disclaimer {
+  color: #ffffff;
+  font-style: italic;
+}
+
+.innerbox {
+  padding-top: 20px;
+}
+
+@media (max-width: 590px) {
+    .innerbox h3 {
+      font-size: 1em;
+  }
+}
+
+.innerbox-before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 21px 22px 0;
+  border-color: rgba(204, 204, 204, 0.1) transparent !important;
+  display: block;
+  width: 0;
+  z-index: 0;
+  bottom: -21px;
+  left: 181px;
+}
+
+.innerbox-after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 21px 22px 0;
+  border-color: #FFFFFF transparent !important;
+  display: block;
+  width: 0;
+  z-index: 1;
+  bottom: -19px;
+  left: 181px;
+}
+
+.innerbox-before {
+  top: -18px;
+  left: 100px;
+  right: 0;
+  bottom: auto;
+  border-width: 0 24px 24px;
+}
+
+.innerbox-after {
+  top: -18px;
+  left: 100px;
+  right: 0;
+  bottom: auto;
+  border-width: 0 24px 24px;
+}
+
+.handle {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.square{
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 0px solid #000000;
+    height: 48px;
+    width: 48px;
+    border-radius: 48px;
+    background-image: url(https://www.homesforheroes.com/wp-content/themes/enfold/images/custom/thumb.png);
+    background-size: 48px;
+    -webkit-appearance: none;
+    cursor: pointer;
+    margin-top: -17px;
+}
+
+
+
+
