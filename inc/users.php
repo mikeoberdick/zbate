@@ -12,11 +12,17 @@ add_role('agent', 'Agent', array(
 		)
 );
 
-// Hide the admin toolbar for non-admins
-add_action('admin_init', 'd4tw_disable_admin_bar');
+// Hide the admin toolbar for agents
+if (!current_user_can('administrator') && !is_admin()) {
+  show_admin_bar(false);
+}
 
-function d4tw_disable_admin_bar() {
-    if ( !current_user_can ( 'administrator' ) ) {
-        show_admin_bar(false);
-    }
+// Add the logout button to the nav menu
+add_filter( 'wp_nav_menu_items', 'd4tw_logout_menu_link', 10, 2 );
+
+function d4tw_logout_menu_link( $items, $args ) {
+    if (is_user_logged_in()) {
+         $items .= '<li class="right btn btn-primary btn-sm menu-item nav-item"><a href="'. wp_logout_url( home_url() ) .'" class = "nav-link">'. __("Log Out") .'</a></li>';
+      }
+   return $items;
 }

@@ -9562,6 +9562,17 @@ ol {
   font-size: 1em;
   margin-top: 25px; }
 
+/* Contact ---------------------------------------*/
+.contactSection {
+  font-size: 4vh;
+  text-align: center; }
+  @media (max-width: 767px) {
+    .contactSection {
+      font-size: 2.5vh; } }
+  .contactSection i {
+    margin-right: 15px;
+    color: #42517f; }
+
 /*------------------------------------------------*/
 /*--------------------[SIDEBAR]-------------------*/
 /*------------------------------------------------*/
