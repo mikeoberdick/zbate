@@ -29,7 +29,7 @@
 			</div>
 
 			<div class = "col-sm-4">
-				<img src = "<?php echo bloginfo('url'); ?>/wp-content/uploads/2017/04/fotolia_123721052.jpg">
+				<img src = "<?php echo bloginfo('url'); ?>/wp-content/uploads/2017/04/Fotolia_123721052_XS.jpg">
 			</div>
 			
 		</div>
