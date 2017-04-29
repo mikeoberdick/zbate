@@ -134,11 +134,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 					)
 				);
 				} ?>
-
-				<?php $user = wp_get_current_user();
-				if ( in_array( 'agent', (array) $user->roles ) ) { ?>
-						<a href="<?php echo wp_logout_url( get_permalink() ); ?>" class = "btn btn-primary btn-sm">Logout</a>
-				<?php } ?>
 				
 			<?php if ( 'container' == $container ) : ?>
 			</div><!-- .container -->

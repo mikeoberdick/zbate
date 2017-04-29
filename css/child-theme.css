@@ -9458,6 +9458,16 @@ ol {
   text-align: center; }
 
 /* AGENT -----------------------------------------*/
+/* LOGIN -----------------------------------------*/
+.loginForm {
+  border: solid 2px #42517f;
+  border-radius: 5px;
+  padding: 25px;
+  text-align: center; }
+  @media (max-width: 767px) {
+    .loginForm {
+      border: 0; } }
+
 /* INTERSTITIAL REGISTRATION ---------------------*/
 @media (max-width: 1199px) {
   #interstitialRegistration .registerCard {

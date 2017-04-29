@@ -303,6 +303,20 @@ ol {
 /* AGENT -----------------------------------------*/
 
 
+/* LOGIN -----------------------------------------*/
+
+.loginForm {
+	border: solid 2px #42517f;
+    @include border-radius(5px);
+    padding: 25px;
+    text-align: center;
+
+    @include media-breakpoint-down(sm) {
+    	border: 0;
+    }
+}
+
+
 
 /* INTERSTITIAL REGISTRATION ---------------------*/
 

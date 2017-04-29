@@ -11,8 +11,8 @@
     <div class="entry-content">
 
     <div class = "row">
-		<div class = "col-sm-12">
-			<img class="size-full wp-image-62 alignnone" src="http://www.zbate.dev/wp-content/uploads/2017/03/zbate_sm_logo.png" alt="" width="200" height="69" />
+		<div class = "col-sm-8 offset-sm-2 loginForm">
+			<img src="<?php echo bloginfo('url'); ?>/wp-content/uploads/2017/03/zbate_sm_logo.png" alt="" width="200" height="69" />
 			<?php echo do_shortcode('[ninja_form id=4]'); ?>
 		</div>
 	</div>
