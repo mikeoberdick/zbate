@@ -444,11 +444,13 @@ ol {
 /* Contact ---------------------------------------*/
 
 .contactSection {
-	font-size: 4vh;
+	font-size: 16px;
 	text-align: center;
+	border: solid 3px $brand-primary;
+	padding: 25px;
 
-	@include media-breakpoint-down(sm) { 
-			font-size: 2.5vh;
+		@include media-breakpoint-up(lg) { 
+			font-size: 24px;
 		}
 
 	i {

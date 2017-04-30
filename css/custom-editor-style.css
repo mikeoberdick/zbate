@@ -9564,11 +9564,13 @@ ol {
 
 /* Contact ---------------------------------------*/
 .contactSection {
-  font-size: 4vh;
-  text-align: center; }
-  @media (max-width: 767px) {
+  font-size: 16px;
+  text-align: center;
+  border: solid 3px #42517f;
+  padding: 25px; }
+  @media (min-width: 992px) {
     .contactSection {
-      font-size: 2.5vh; } }
+      font-size: 24px; } }
   .contactSection i {
     margin-right: 15px;
     color: #42517f; }
