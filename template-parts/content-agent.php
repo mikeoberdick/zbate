@@ -18,7 +18,7 @@
 	
 		<div class = "row">
 
-			<div class = "col-sm-8">
+			<div class = "col-md-8">
 				<p>Zbate was designed to grow your business! How? By utilizing a creative way to capture more business and increase conversion rates when conducting open houses and attending networking events.</p>
 
 				<p>What’s in it for the buyer? Each participating transaction will qualify your buyer for a “ZBATE REBATE” from a referral fee allowing them to save significant money on a home purchase.</p>
@@ -28,7 +28,7 @@
 				<p>No Tricks, No Gimicks, Just Good Business!!</p>
 			</div>
 
-			<div class = "col-sm-4">
+			<div class = "col-md-4">
 				<img src = "<?php echo bloginfo('url'); ?>/wp-content/uploads/2017/04/Fotolia_123721052_XS.jpg">
 			</div>
 			

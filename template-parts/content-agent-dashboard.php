@@ -11,12 +11,12 @@
     <div class="entry-content">
 
     <div class = "row">
-		<div class = "col-sm-8">
+		<div class = "col-md-8">
 
 		<?php echo do_shortcode('[ninja_form id=5]'); ?>
 
 		</div>
-		<div class = "col-sm-4">
+		<div class = "col-md-4">
 			<div>
 				<h5>Marketing Materials</h5>
 				<hr class = "mt-0">

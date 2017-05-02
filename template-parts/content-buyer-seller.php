@@ -15,11 +15,11 @@
    		</div>
 	
 		<div class = "row">
-			<div class = "col-sm-4">
+			<div class = "col-md-4">
 				<img src = "<?php echo bloginfo('url'); ?>/wp-content/uploads/2017/04/Fotolia_91431339_XS.jpg">
 			</div>
 
-			<div class = "col-sm-8">
+			<div class = "col-md-8">
 				<p>It's simple, just register and we will match you with a participating real estate agent, or you can choose your own.  Participating agents send a portion of their commission to ZBATE.  It's that easy!</p>
 
 				<p>After the closing on your home, your agent will send us a referral fee and we will process your "ZBATE REBATE".</p>
